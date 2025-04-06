@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./src/output.css --watch"
+    "build": "tailwindcss -i ./src/tailwind.css -o ./src/styles/output.css --watch"
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.2.5",
