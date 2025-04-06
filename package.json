@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "tailwindcss -i ./src/tailwind.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.2.5",
+    "@tailwindcss/cli": "^4.0.17",
+    "tailwindcss": "^4.0.17"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "css": "^3.0.0"
+  }
+}
