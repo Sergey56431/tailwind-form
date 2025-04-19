@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
-    <link href="output.css" rel="stylesheet">
+    <link href="styles/output.css" rel="stylesheet">
     <script src="main.js" defer></script>
 </head>
 <body class="h-svh font-montserrat">
 
 <div class="flex items-center justify-center h-full w-full">
-        <div class="flex flex-col items-center w-full gap-12">
-            <div class="flex flex-col items-center gap-5">
-                <h1 class="text-5xl font-bold" id="title">Авторизация</h1>
-                <ul class="flex items-center gap-5 list-none">
-                    <li>
-                        <a target="_blank" href="https://google.com">
-                            <img src="img/icon1.png" alt="иконка 1">
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://vk.com">
-                            <img src="img/icon2.png" alt="иконка 2">
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://ok.ru">
-                            <img src="img/icon3.png" alt="иконка 3">
-                        </a>
-                    </li>
-                </ul>
-                <p class="text-xl" id="subTitle">или используйте свой аккаунт</p>
-            </div>
+    <div class="flex flex-col items-center w-full gap-12">
+        <div class="flex flex-col items-center gap-5">
+            <h1 class="text-5xl font-bold" id="title">Авторизация</h1>
+            <ul class="flex items-center gap-5 list-none">
+                <li>
+                    <a target="_blank" href="https://google.com">
+                        <img src="img/icon1.png" alt="иконка 1">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://vk.com">
+                        <img src="img/icon2.png" alt="иконка 2">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://ok.ru">
+                        <img src="img/icon3.png" alt="иконка 3">
+                    </a>
+                </li>
+            </ul>
+            <p class="text-xl" id="subTitle">или используйте свой аккаунт</p>
+        </div>
         <form class="flex flex-col items-center w-full gap-5" id="loginForm">
 
             <div>
@@ -46,20 +46,25 @@
             </div>
             <div class="flex flex-col items-center items-center gap-5 mt-7">
                 <div>
-                    <a href="#" class="font-medium text-xl hover:duration-400 hover:text-red-800 transition-colors ease-in-out" id="link">Забыли пароль?</a>
+                    <a href="#"
+                       class="font-medium text-xl duration-400 hover:text-red-800 transition-colors ease-in-out"
+                       id="link">Забыли пароль?</a>
                 </div>
-                <button class="bg-gradient-to-r from-red-800 to-red-400 rounded-full font-semibold cursor-pointer text-xl text-white px-14 py-4
-                           hover:from-red-900 hover:to-red-500 transition-colors hover:duration-700 ease-in-out" type="button" id="btn">Войти</button>
+                <button class="bg-linear-to-r/oklab from-myred-800 to-myred-400 rounded-full font-semibold cursor-pointer text-xl text-white px-14 py-4
+                           hover:from-red-900 hover:to-red-500 transition-colors duration-700 ease-in-out" type="button"
+                        id="btn">Войти
+                </button>
             </div>
 
         </form>
     </div>
-    <div class="h-full bg-gradient-to-r from-red-800 to-red-400 w-full">
+    <div class="h-full bg-linear-to-r/oklab from-myred-800 to-myred-400 w-full">
         <div class="flex flex-col items-center justify-center h-full gap-7">
             <h2 class="text-white text-5xl font-bold" id="secondTitle">Привет, друг!</h2>
-            <p class="text-white max-w-lg text-xl text-center font-normal" id="secondSubTitle">Если ты ещё не успел зарегистрироваться, то скорее сделай это!</p>
+            <p class="text-white max-w-lg text-xl text-center font-normal" id="secondSubTitle">Если ты ещё не успел
+                зарегистрироваться, то скорее сделай это!</p>
             <a href="signup.html" type="button" class="bg-transparent decoration-0 border-2 font-medium border-white rounded-full cursor-pointer px-16 py-4 text-2xl text-white hover:bg-white hover:text-black
-            transition-colors hover:duration-700 ease-in-out" id="secondBtn">Регистрация</a>
+            transition-colors duration-700 ease-in-out" id="secondBtn">Регистрация</a>
         </div>
 
     </div>

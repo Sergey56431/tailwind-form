@@ -7,23 +7,32 @@
 @font-face {
     font-family: 'Montserrat';
     font-weight: 400;
-    src: url("../src/fonts/Montserrat-Regular.ttf");
+    src: url("../fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-weight: 700;
-    src: url("../src/fonts/Montserrat-Bold.ttf");
+    src: url("../fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-weight: 500;
-    src: url("../src/fonts/Montserrat-Medium.ttf");
+    src: url("../fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
     font-family: 'Montserrat';
     font-weight: 600;
-    src: url("../src/fonts/Montserrat-SemiBold.ttf");
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+.form-input {
+    @apply p-4 outline-0 bg-gray-200 rounded-lg w-xl placeholder:text-gray-400
+}
+
+@theme {
+    --color-myred-800: #B13A3E;
+    --color-myred-400: #EB4E72;
 }

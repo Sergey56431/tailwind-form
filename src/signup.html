@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
-    <link href="output.css" rel="stylesheet">
+    <link href="styles/output.css" rel="stylesheet">
     <script src="main.js" defer></script>
 </head>
 <body class="h-svh font-[montserrat]">
@@ -36,7 +36,7 @@
 
         <form class="flex flex-col items-center w-full gap-5" id="signUpForm">
             <div>
-                <input autocomplete=off class="p-4 outline-0 bg-gray-200 rounded-lg w-xl placeholder:text-gray-400"
+                <input autocomplete=off class="form-input"
                        type="text" id="name" placeholder="Имя">
             </div>
 
@@ -54,19 +54,19 @@
                 <input autocomplete=off class="p-4 outline-0 bg-gray-200 rounded-lg w-xl placeholder:text-gray-400"
                        type="password" id="passwordRepeat" placeholder="Повторите пароль">
             </div>
-            <button class="mt-7 bg-gradient-to-r from-red-800 to-red-400 rounded-full font-semibold cursor-pointer text-xl text-white px-14 py-4
-            hover:from-red-900 hover:to-red-500 transition-colors hover:duration-700 ease-in-out" type="button"
+            <button class="mt-7 bg-linear-to-r/oklab from-myred-800 to-myred-400 rounded-full font-semibold cursor-pointer text-xl text-white px-14 py-4
+            hover:from-red-900 hover:to-red-500 transition-colors duration-700 ease-in-out" type="button"
                     id="btn">Зарегистрироваться
             </button>
         </form>
     </div>
-    <div class="h-full bg-gradient-to-r from-red-800 to-red-400 w-full">
+    <div class="h-full bg-linear-to-r/oklab from-myred-800 to-myred-400 w-full">
         <div class="flex flex-col items-center justify-center h-full gap-7">
             <h2 class="text-white text-5xl font-bold" id="secondTitle">Привет, друг!</h2>
             <p class="text-white max-w-xl text-xl text-center font-normal" id="secondSubTitle">Уже есть свой аккаунт? Тогда, скорее
                 заходи в свой профиль и узнай последние новости </p>
             <a href="login.html" type="button" class="bg-transparent decoration-0 border-2 font-medium border-white rounded-full cursor-pointer px-16 py-4 text-2xl text-white hover:bg-white hover:text-black
-            transition-colors hover:duration-700 ease-in-out" id="secondBtn">Авторизация</a>
+            transition-colors duration-700 ease-in-out" id="secondBtn">Авторизация</a>
         </div>
 
     </div>
