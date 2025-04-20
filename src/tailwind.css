@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+    --color-myred-800: #B13A3E;
+    --color-myred-400: #EB4E72;
+}
+
+.form-button {
+    @apply
+    bg-linear-to-r/oklab from-myred-800 to-myred-400 rounded-4xl border-0 outline-0 p-[18px] w-2xs text-white
+    font-semibold text-2xl hover:from-red-500 hover:to-red-900 duration-500 transition-colors ease-in-out cursor-pointer;
+}
+
+.link-button {
+    @apply border border-solid border-white py-[18px] font-semibold text-white hover:bg-white text-xl text-center
+    rounded-4xl w-2xs hover:text-black ease-in-out transition-colors duration-500;
+}
+
+.form-input {
+    @apply p-3 outline-0 bg-gray-200 rounded-lg w-xl placeholder:text-gray-400;
+}

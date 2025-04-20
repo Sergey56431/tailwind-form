@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
-<!--    <link href="styles/output.css" rel="stylesheet">-->
+    <link href="styles/output.css" rel="stylesheet">
     <script src="main.js" defer></script>
 </head>
 <body>
 
-<div>
-    <div>
-        <div>
-            <h1>Регистрация</h1>
-            <ul>
+<div class="w-full h-screen flex items-center justify-center ">
+    <div class="w-1/2 flex flex-col items-center gap-12">
+        <div class="flex flex-col items-center gap-5">
+            <h1 class="text-5xl font-bold">Регистрация</h1>
+            <ul class="flex gap-5 items-center">
                 <li>
                     <a target="_blank" href="https://google.com">
                         <img src="img/icon1.png" alt="иконка 1">
@@ -30,34 +30,38 @@
                     </a>
                 </li>
             </ul>
-            <p>или создайте свой аккаунт</p>
+            <p class="text-xl font-medium">или создайте свой аккаунт</p>
         </div>
 
 
-        <form id="signUpForm">
-            <div>
-                <input autocomplete=off type="text" id="name" placeholder="Имя">
+        <form id="signUpForm" class="flex items-center flex-col gap-6">
+            <div >
+                <input class="form-input" autocomplete=off type="text" id="name" placeholder="Имя">
+                <div class="text-red-400 hidden"></div>
             </div>
 
             <div>
-                <input autocomplete=off type="email" id="email" placeholder="Email">
+                <input class="form-input" autocomplete=off type="email" id="email" placeholder="Email">
+                <div class="text-red-400 hidden"></div>
             </div>
 
             <div>
-                <input autocomplete=off type="password" id="password" placeholder="Пароль">
+                <input class="form-input" autocomplete=off type="password" id="password" placeholder="Пароль">
+                <div class="text-red-400 hidden"></div>
             </div>
 
             <div>
-                <input autocomplete=off type="password" id="passwordRepeat" placeholder="Повторите пароль">
+                <input class="form-input" autocomplete=off type="password" id="passwordRepeat" placeholder="Повторите пароль">
+                <div class="text-red-400 hidden"></div>
             </div>
-            <button type="button" id="btn">Зарегистрироваться</button>
+            <button class="form-button" type="button" id="btn">Зарегистрироваться</button>
         </form>
     </div>
-    <div>
-        <div>
-            <h2>Привет, друг!</h2>
-            <p>Уже есть свой аккаунт? Тогда, скорее заходи в свой профиль и узнай последние новости </p>
-            <a href="login.html" type="button" id="secondBtn">Авторизация</a>
+    <div class="w-1/2 h-screen flex flex-col items-center bg-linear-to-r/oklab from-myred-800 to-myred-400">
+        <div  class="flex flex-col justify-center items-center h-full gap-7">
+            <h2 class="text-5xl font-bold text-white">Привет, друг!</h2>
+            <p class="text-white text-xl text-center max-w-lg">Уже есть свой аккаунт? Тогда, скорее заходи в свой профиль и узнай последние новости </p>
+            <a class="link-button" href="login.html" type="button" id="secondBtn">Авторизация</a>
         </div>
 
     </div>
